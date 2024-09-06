@@ -1,7 +1,14 @@
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 
 dotenv.config();
 
-export const api_key = process.env.CALENDARIFIC_API_KEY;
-export const baseUrl = process.env.Base_Url;
-export const cacheTTL = process.env.CACHE_TTL
+const api_key = process.env.CALENDARIFIC_API_KEY;
+const baseUrl = process.env.Base_Url;
+const cacheTTL = process.env.CACHE_TTL
+
+
+module.exports = {
+    api_key,
+    baseUrl,
+    cacheTTL
+  };
